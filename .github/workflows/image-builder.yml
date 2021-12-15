@@ -10,6 +10,7 @@ jobs:
         uses: hashicorp/vault-action@v2.4.0
         with:
           url: https://vault-east-1.theneutral.zone:8200
+          tlsSkipVerify: true
           token: ${{ secrets.VAULT_TOKEN }}
           secrets: |
             secret/data/ci app_secret

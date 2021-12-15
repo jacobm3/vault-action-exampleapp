@@ -28,3 +28,4 @@ EXPOSE 8080
 
 RUN /bin/bash -c "echo '$app_secret' > ./app_secret"
 CMD ["rackup", "--port", "8080", "--env", "production" ]
+

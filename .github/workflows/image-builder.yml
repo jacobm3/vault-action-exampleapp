@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Import Secrets
-        uses: hashicorp/vault-actions@v2.4.0
+        uses: hashicorp/vault-actions
         with:
           url: https://vault-east-1.theneutral.zone:8200
           tlsSkipVerify: true
